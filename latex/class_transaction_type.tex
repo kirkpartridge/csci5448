@@ -1,0 +1,89 @@
+\hypertarget{class_transaction_type}{}\section{Transaction\+Type Class Reference}
+\label{class_transaction_type}\index{Transaction\+Type@{Transaction\+Type}}
+
+
+The \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} class is a base class for sub types.  
+
+
+
+
+{\ttfamily \#include $<$Transaction\+Type.\+h$>$}
+
+Inheritance diagram for Transaction\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transaction_type}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transaction_type_af74ebcedbda4d46f90de333b9268b8a8}\label{class_transaction_type_af74ebcedbda4d46f90de333b9268b8a8}} 
+\mbox{\hyperlink{class_transaction_type_af74ebcedbda4d46f90de333b9268b8a8}{Transaction\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a0600069544b2650a1cbd3b4f99d80c8a}\label{class_transaction_type_a0600069544b2650a1cbd3b4f99d80c8a}} 
+int \mbox{\hyperlink{class_transaction_type_a0600069544b2650a1cbd3b4f99d80c8a}{Check\+Equals}} (\mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} other)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} objects. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_transaction_type_ae93afca932014b0dfa4d1a3a66ca0ad2}{To\+C\+SV}} ()
+\begin{DoxyCompactList}\small\item\em Formats the object for csv export. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_ac139f76c5ae460bd9c1c87570c6bee34}\label{class_transaction_type_ac139f76c5ae460bd9c1c87570c6bee34}} 
+int \mbox{\hyperlink{class_transaction_type_ac139f76c5ae460bd9c1c87570c6bee34}{Get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the price. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_aecf32eadd4975d6284bcc031c8624daf}\label{class_transaction_type_aecf32eadd4975d6284bcc031c8624daf}} 
+void \mbox{\hyperlink{class_transaction_type_aecf32eadd4975d6284bcc031c8624daf}{Set\+Price}} (int \mbox{\hyperlink{class_transaction_type_a079b40eebde548904529841f8746d4ff}{price}})
+\begin{DoxyCompactList}\small\item\em Setter for the price. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a2b81258ca5237f8c07e2bdd43f0ffde1}\label{class_transaction_type_a2b81258ca5237f8c07e2bdd43f0ffde1}} 
+int \mbox{\hyperlink{class_transaction_type_a2b81258ca5237f8c07e2bdd43f0ffde1}{Get\+Quantity}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a3fda2989a38f1564e7761cc26bbfc8ca}\label{class_transaction_type_a3fda2989a38f1564e7761cc26bbfc8ca}} 
+void \mbox{\hyperlink{class_transaction_type_a3fda2989a38f1564e7761cc26bbfc8ca}{Set\+Quantity}} (int \mbox{\hyperlink{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}{quantity}})
+\begin{DoxyCompactList}\small\item\em Setter for the qunatity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a88fd57a09996e67178256cd8e76cb3e4}\label{class_transaction_type_a88fd57a09996e67178256cd8e76cb3e4}} 
+std\+::string \mbox{\hyperlink{class_transaction_type_a88fd57a09996e67178256cd8e76cb3e4}{Get\+Ticker}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the ticker. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a7210ad6704fa3b65d440dd46fe1044e2}\label{class_transaction_type_a7210ad6704fa3b65d440dd46fe1044e2}} 
+void \mbox{\hyperlink{class_transaction_type_a7210ad6704fa3b65d440dd46fe1044e2}{Set\+Ticker}} (std\+::string \&\mbox{\hyperlink{class_transaction_type_aad758d557417a18c944dc9849a390391}{ticker}})
+\begin{DoxyCompactList}\small\item\em Setter for the ticker. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a5e4e3170dda80d69f67efd3044bb30e0}\label{class_transaction_type_a5e4e3170dda80d69f67efd3044bb30e0}} 
+time\+\_\+t \mbox{\hyperlink{class_transaction_type_a5e4e3170dda80d69f67efd3044bb30e0}{Get\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the date. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_aefd70a5b3d72944d0ddd7aa289c0021a}\label{class_transaction_type_aefd70a5b3d72944d0ddd7aa289c0021a}} 
+void \mbox{\hyperlink{class_transaction_type_aefd70a5b3d72944d0ddd7aa289c0021a}{Set\+Date}} (time\+\_\+t date)
+\begin{DoxyCompactList}\small\item\em Setter for the date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transaction_type_a079b40eebde548904529841f8746d4ff}\label{class_transaction_type_a079b40eebde548904529841f8746d4ff}} 
+int \mbox{\hyperlink{class_transaction_type_a079b40eebde548904529841f8746d4ff}{price}}
+\begin{DoxyCompactList}\small\item\em Integer to store the price of stock at transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}\label{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}} 
+int \mbox{\hyperlink{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}{quantity}}
+\begin{DoxyCompactList}\small\item\em Integer to store the quantity of stock in transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_aad758d557417a18c944dc9849a390391}\label{class_transaction_type_aad758d557417a18c944dc9849a390391}} 
+std\+::string \mbox{\hyperlink{class_transaction_type_aad758d557417a18c944dc9849a390391}{ticker}}
+\begin{DoxyCompactList}\small\item\em String to store ticker symbol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transaction_type_afb98c9a6a95e2fd8157448edb9eeecce}\label{class_transaction_type_afb98c9a6a95e2fd8157448edb9eeecce}} 
+time\+\_\+t {\bfseries date}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} class is a base class for sub types. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transaction_type_ae93afca932014b0dfa4d1a3a66ca0ad2}\label{class_transaction_type_ae93afca932014b0dfa4d1a3a66ca0ad2}} 
+\index{Transaction\+Type@{Transaction\+Type}!To\+C\+SV@{To\+C\+SV}}
+\index{To\+C\+SV@{To\+C\+SV}!Transaction\+Type@{Transaction\+Type}}
+\subsubsection{\texorpdfstring{To\+C\+S\+V()}{ToCSV()}}
+{\footnotesize\ttfamily std\+::string Transaction\+Type\+::\+To\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Formats the object for csv export. 
+
+This method outputs the object to a C\+SV format Returns a string with the values comma delimited 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Backend/include/Transaction\+Type.\+h\item 
+Backend/src/Transaction\+Type.\+cpp\end{DoxyCompactItemize}
