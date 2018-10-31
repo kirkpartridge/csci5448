@@ -9,6 +9,14 @@ date(time(0))
 {
 }
 
+TransactionType::TransactionType(std::string _ticker, int _price, int _quantity, time_t _date)
+{
+    ticker = _ticker;
+    price = _price;
+    quantity = _quantity;
+    date = _date;
+}
+
 TransactionType::~TransactionType()
 {
 }

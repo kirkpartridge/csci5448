@@ -20,6 +20,7 @@ public:
 
     int CalculatePerformance();
     
+    void GetTransactionsFromCSV(std::string filePath);
 private:
 
     StockCsvHandler csvHandler;

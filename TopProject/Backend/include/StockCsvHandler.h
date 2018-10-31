@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "./TransactionType.h"
+#include "./Stock.h"
 
 class StockCsvHandler {
 
@@ -16,13 +16,13 @@ class StockCsvHandler {
     bool ExportCSV(std::vector<TransactionType> transactions);
 
     ///Setter for input file path
-    void setInputFilePath(std::string path);
+    void setInputFilePath(std::string path) { inputFilePath = path; };
     ///Getter for input file path
-    std::string getInputFilePath();
+    std::string getInputFilePath() { return inputFilePath; };
     ///Setter for output file path
-    void setOutputFilePath(std::string path);
+    void setOutputFilePath(std::string path) { outputFilePath = path; };
     ///Getter for output file path
-    std::string getOutputFilePath();
+    std::string getOutputFilePath() { return outputFilePath; };
 private:
 
     ///Private member for input file path.

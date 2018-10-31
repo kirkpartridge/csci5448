@@ -6,7 +6,7 @@ var searchData=
   ['setprice',['SetPrice',['../class_transaction_type.html#aecf32eadd4975d6284bcc031c8624daf',1,'TransactionType']]],
   ['setquantity',['SetQuantity',['../class_transaction_type.html#a3fda2989a38f1564e7761cc26bbfc8ca',1,'TransactionType']]],
   ['setticker',['SetTicker',['../class_transaction_type.html#a7210ad6704fa3b65d440dd46fe1044e2',1,'TransactionType']]],
-  ['stock',['Stock',['../class_stock.html',1,'Stock'],['../class_stock.html#adddc4282213b3174a4299cca5a30117c',1,'Stock::Stock()']]],
+  ['stock',['Stock',['../class_stock.html',1,'Stock'],['../class_stock.html#adddc4282213b3174a4299cca5a30117c',1,'Stock::Stock()'],['../class_stock.html#a0527749d03379ba35706fcf48e7effa5',1,'Stock::Stock(std::string ticker, int price, int quantity, time_t date)']]],
   ['stockcsvhandler',['StockCsvHandler',['../class_stock_csv_handler.html',1,'StockCsvHandler'],['../class_stock_csv_handler.html#a79a39d762f4dd87f82ee927c33f596cc',1,'StockCsvHandler::StockCsvHandler()']]],
   ['stockmodel',['StockModel',['../class_stock_model.html',1,'']]]
 ];

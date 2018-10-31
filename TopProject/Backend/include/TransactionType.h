@@ -10,6 +10,8 @@ public:
     TransactionType();
     //Default deconstructor
     ~TransactionType();
+    ///Parameter Constructor
+    TransactionType(std::string _ticker, int _price, int _quantity, time_t _date);
     ///Compares two TransactionType objects
     int CheckEquals(TransactionType other);
     ///Formats the object for csv export

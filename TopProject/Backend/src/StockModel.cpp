@@ -36,4 +36,13 @@ int StockModel::CalculatePerformance()
     return 1;
 }
 
-
+void StockModel::GetTransactionsFromCSV(std::string filePath)
+{
+    std::vector<TransactionType> transactions;
+    csvHandler.setInputFilePath(filePath);
+    transactions = csvHandler.ImportCSV();
+    for (std::vector<TransactionType>::iterator it = transactions.begin() ; it != transactions.end(); ++it)
+    {
+        std::cout << it->ToCSV() << std::endl;
+    }
+}
