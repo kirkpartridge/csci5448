@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['stock',['Stock',['../class_stock.html',1,'']]],
-  ['stockcsvhandler',['StockCsvHandler',['../class_stock_csv_handler.html',1,'']]],
-  ['stockmodel',['StockModel',['../class_stock_model.html',1,'']]]
+  ['logincontroller',['LoginController',['../class_login_controller.html',1,'']]],
+  ['loginwindow',['LoginWindow',['../class_login_window.html',1,'']]]
 ];

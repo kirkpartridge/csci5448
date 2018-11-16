@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['ticker',['ticker',['../class_transaction_type.html#aad758d557417a18c944dc9849a390391',1,'TransactionType']]],
-  ['tocsv',['ToCSV',['../class_transaction_type.html#ae93afca932014b0dfa4d1a3a66ca0ad2',1,'TransactionType']]],
-  ['transactiontype',['TransactionType',['../class_transaction_type.html',1,'TransactionType'],['../class_transaction_type.html#af74ebcedbda4d46f90de333b9268b8a8',1,'TransactionType::TransactionType()'],['../class_transaction_type.html#ad608be1260aa2008d19f25f35e048207',1,'TransactionType::TransactionType(std::string _ticker, int _price, int _quantity, time_t _date)']]]
+  ['qt_5fmeta_5fstringdata_5fcontroller_5ft',['qt_meta_stringdata_Controller_t',['../structqt__meta__stringdata___controller__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5flogin_5ft',['qt_meta_stringdata_Login_t',['../structqt__meta__stringdata___login__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5flogincontroller_5ft',['qt_meta_stringdata_LoginController_t',['../structqt__meta__stringdata___login_controller__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5floginwindow_5ft',['qt_meta_stringdata_LoginWindow_t',['../structqt__meta__stringdata___login_window__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5fmainwindow_5ft',['qt_meta_stringdata_MainWindow_t',['../structqt__meta__stringdata___main_window__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5fsignupwindow_5ft',['qt_meta_stringdata_SignUpWindow_t',['../structqt__meta__stringdata___sign_up_window__t.html',1,'']]],
+  ['qt_5fmeta_5fstringdata_5fstockcontroller_5ft',['qt_meta_stringdata_StockController_t',['../structqt__meta__stringdata___stock_controller__t.html',1,'']]],
+  ['quantity',['quantity',['../class_transaction_type.html#a60b6221cf4b0bf30f5c4a4e15893b98d',1,'TransactionType']]]
 ];

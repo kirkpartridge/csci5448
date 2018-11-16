@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['price',['price',['../class_transaction_type.html#a079b40eebde548904529841f8746d4ff',1,'TransactionType']]]
+  ['logincomplete',['loginComplete',['../class_master_controller.html#adb9bf0a49dd9010217c47834a98ec184',1,'MasterController']]],
+  ['logincontroller',['LoginController',['../class_login_controller.html',1,'LoginController'],['../class_login_controller.html#a3591281520e6cfea2bc3af44bdef58e3',1,'LoginController::LoginController()']]],
+  ['loginwindow',['LoginWindow',['../class_login_window.html',1,'LoginWindow'],['../class_login_window.html#aacfb01de174b9eaf5a712bbfd4b6d9b5',1,'LoginWindow::LoginWindow()']]]
 ];
