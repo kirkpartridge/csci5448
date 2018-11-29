@@ -14,21 +14,28 @@ class QStringListModel;
 class QTextEdit;
 QT_END_NAMESPACE
 
-//! [Window definition]
+/** Sign up window. Populates needed edits.
+ * */
 class SignUpWindow : public QWidget
 {
     Q_OBJECT
 
 public:
+    ///Constructor
     SignUpWindow(QWidget *parent = 0);
+    ///Returns sign up button
     QPushButton * getSignUpButton() { return signUpButton; }
+    ///Returns cancel button
     QPushButton * getCancelButton() { return cancelButton; }
+    ///Returns user entered login name
     std::string getLoginName();
+    ///Returns user entered password
     std::string getPassword();
+    ///Returns user entered repeat password
     std::string getRepeatPassword();
 
 private:
-
+    ///Private QWidgets
     QLabel *loginNameLabel;
     QLabel *passwordLabel;
     QLabel *repeatPasswordLabel;

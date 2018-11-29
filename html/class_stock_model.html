@@ -69,31 +69,213 @@ $(function() {
 <div class="title">StockModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_stock_model.html" title="The StockModel class. ">StockModel</a> class.  
+ <a href="class_stock_model.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_stock_model_8h_source.html">StockModel.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa5de5466e50f2bba375387dd35158b9d"><td class="memItemLeft" align="right" valign="top"><a id="aa5de5466e50f2bba375387dd35158b9d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddTransaction</b> (std::string symbol, int quantity, int price, <a class="el" href="class_transaction_type.html">TransactionType</a> type)</td></tr>
-<tr class="separator:aa5de5466e50f2bba375387dd35158b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ace2720dc1742b8d563b96bb2e81eec"><td class="memItemLeft" align="right" valign="top"><a id="a2ace2720dc1742b8d563b96bb2e81eec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTransaction</b> (std::string symbol, int quantity, int price, <a class="el" href="class_transaction_type.html">TransactionType</a> type)</td></tr>
-<tr class="separator:a2ace2720dc1742b8d563b96bb2e81eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd1e771bc7417eb735ab383d24d4988"><td class="memItemLeft" align="right" valign="top"><a id="afcd1e771bc7417eb735ab383d24d4988"></a>
-std::vector&lt; <a class="el" href="class_transaction_type.html">TransactionType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransactions</b> (std::string symbol)</td></tr>
-<tr class="separator:afcd1e771bc7417eb735ab383d24d4988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac892a9e35bc731342d92c84f5e0bfff6"><td class="memItemLeft" align="right" valign="top"><a id="ac892a9e35bc731342d92c84f5e0bfff6"></a>
-<a class="el" href="class_transaction_type.html">TransactionType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStockData</b> (std::string symbol)</td></tr>
-<tr class="separator:ac892a9e35bc731342d92c84f5e0bfff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ac92e3e10b39f999ea5a41a96b7b9c"><td class="memItemLeft" align="right" valign="top"><a id="af9ac92e3e10b39f999ea5a41a96b7b9c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CalculatePerformance</b> ()</td></tr>
-<tr class="separator:af9ac92e3e10b39f999ea5a41a96b7b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce359297d4d2c8fcb0ad6889664b360"><td class="memItemLeft" align="right" valign="top"><a id="a8ce359297d4d2c8fcb0ad6889664b360"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransactionsFromCSV</b> (std::string filePath)</td></tr>
-<tr class="separator:a8ce359297d4d2c8fcb0ad6889664b360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d89baa0edab731599f13fa63adf8c9"><td class="memItemLeft" align="right" valign="top"><a id="a79d89baa0edab731599f13fa63adf8c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#a79d89baa0edab731599f13fa63adf8c9">StockModel</a> ()</td></tr>
+<tr class="memdesc:a79d89baa0edab731599f13fa63adf8c9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_stock_model.html#a79d89baa0edab731599f13fa63adf8c9" title="StockModel::StockModel. ">StockModel::StockModel</a>. <br /></td></tr>
+<tr class="separator:a79d89baa0edab731599f13fa63adf8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46abe8e7ba74e65192911a5e3fc65ba5"><td class="memItemLeft" align="right" valign="top"><a id="a46abe8e7ba74e65192911a5e3fc65ba5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#a46abe8e7ba74e65192911a5e3fc65ba5">~StockModel</a> ()</td></tr>
+<tr class="memdesc:a46abe8e7ba74e65192911a5e3fc65ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_stock_model.html#a46abe8e7ba74e65192911a5e3fc65ba5" title="StockModel::~StockModel. ">StockModel::~StockModel</a>. <br /></td></tr>
+<tr class="separator:a46abe8e7ba74e65192911a5e3fc65ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6461b20ecb47314c9799a916f42e7e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#a6461b20ecb47314c9799a916f42e7e5d">AddTransaction</a> (std::string symbol, int quantity, int price, std::string date, std::string type)</td></tr>
+<tr class="memdesc:a6461b20ecb47314c9799a916f42e7e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a transaction to the internal model.  <a href="#a6461b20ecb47314c9799a916f42e7e5d">More...</a><br /></td></tr>
+<tr class="separator:a6461b20ecb47314c9799a916f42e7e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25fcc267361e7375b60f87c844ac36b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#ad25fcc267361e7375b60f87c844ac36b">RemoveTransaction</a> (std::string symbol, int quantity, int price, std::string type)</td></tr>
+<tr class="memdesc:ad25fcc267361e7375b60f87c844ac36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes transaction form the internal model.  <a href="#ad25fcc267361e7375b60f87c844ac36b">More...</a><br /></td></tr>
+<tr class="separator:ad25fcc267361e7375b60f87c844ac36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11ae61c7217b569205d135d33c34008"><td class="memItemLeft" align="right" valign="top"><a id="ac11ae61c7217b569205d135d33c34008"></a>
+std::vector&lt; <a class="el" href="class_transaction_type.html">TransactionType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#ac11ae61c7217b569205d135d33c34008">GetTransactions</a> ()</td></tr>
+<tr class="memdesc:ac11ae61c7217b569205d135d33c34008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all transactions. <br /></td></tr>
+<tr class="separator:ac11ae61c7217b569205d135d33c34008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b3101a6ffcfa31ef3a6058c8d6c990"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_transaction_type.html">TransactionType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#a88b3101a6ffcfa31ef3a6058c8d6c990">GetTransactionsFromCSV</a> (std::string filePath)</td></tr>
+<tr class="memdesc:a88b3101a6ffcfa31ef3a6058c8d6c990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads in CSV and populates the internal model.  <a href="#a88b3101a6ffcfa31ef3a6058c8d6c990">More...</a><br /></td></tr>
+<tr class="separator:a88b3101a6ffcfa31ef3a6058c8d6c990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0150fddd7fe2686b693f877ba84cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stock_model.html#a4b0150fddd7fe2686b693f877ba84cac">SetExportCSVPath</a> (std::string filePath)</td></tr>
+<tr class="memdesc:a4b0150fddd7fe2686b693f877ba84cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the export CSV path.  <a href="#a4b0150fddd7fe2686b693f877ba84cac">More...</a><br /></td></tr>
+<tr class="separator:a4b0150fddd7fe2686b693f877ba84cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_stock_model.html" title="The StockModel class. ">StockModel</a> class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6461b20ecb47314c9799a916f42e7e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6461b20ecb47314c9799a916f42e7e5d">&#9670;&nbsp;</a></span>AddTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StockModel::AddTransaction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>symbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quantity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a transaction to the internal model. </p>
+<p><a class="el" href="class_stock_model.html#a6461b20ecb47314c9799a916f42e7e5d" title="Adds a transaction to the internal model. ">StockModel::AddTransaction</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symbol</td><td></td></tr>
+    <tr><td class="paramname">quantity</td><td></td></tr>
+    <tr><td class="paramname">price</td><td></td></tr>
+    <tr><td class="paramname">date</td><td></td></tr>
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a88b3101a6ffcfa31ef3a6058c8d6c990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b3101a6ffcfa31ef3a6058c8d6c990">&#9670;&nbsp;</a></span>GetTransactionsFromCSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_transaction_type.html">TransactionType</a> &gt; StockModel::GetTransactionsFromCSV </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads in CSV and populates the internal model. </p>
+<p><a class="el" href="class_stock_model.html#a88b3101a6ffcfa31ef3a6058c8d6c990" title="Reads in CSV and populates the internal model. ">StockModel::GetTransactionsFromCSV</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad25fcc267361e7375b60f87c844ac36b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25fcc267361e7375b60f87c844ac36b">&#9670;&nbsp;</a></span>RemoveTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StockModel::RemoveTransaction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>symbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quantity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes transaction form the internal model. </p>
+<p><a class="el" href="class_stock_model.html#ad25fcc267361e7375b60f87c844ac36b" title="Removes transaction form the internal model. ">StockModel::RemoveTransaction</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symbol</td><td></td></tr>
+    <tr><td class="paramname">quantity</td><td></td></tr>
+    <tr><td class="paramname">price</td><td></td></tr>
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4b0150fddd7fe2686b693f877ba84cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0150fddd7fe2686b693f877ba84cac">&#9670;&nbsp;</a></span>SetExportCSVPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StockModel::SetExportCSVPath </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter for the export CSV path. </p>
+<p><a class="el" href="class_stock_model.html#a4b0150fddd7fe2686b693f877ba84cac" title="Setter for the export CSV path. ">StockModel::SetExportCSVPath</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Backend/include/<a class="el" href="_stock_model_8h_source.html">StockModel.h</a></li>
-<li>Backend/src/StockModel.cpp</li>
+<li>GUI/stockTracker/<a class="el" href="_stock_model_8h_source.html">StockModel.h</a></li>
+<li>GUI/stockTracker/StockModel.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

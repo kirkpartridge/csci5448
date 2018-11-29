@@ -1,17 +1,27 @@
 #include <fstream>
 
-#include "../include/StockCsvHandler.h"
+#include "StockCsvHandler.h"
 
+/**
+ * @brief StockCsvHandler::StockCsvHandler
+ */
 StockCsvHandler::StockCsvHandler():
 inputFilePath(""),
 outputFilePath("")
 {
 }
 
+/**
+ * @brief StockCsvHandler::~StockCsvHandler
+ */
 StockCsvHandler::~StockCsvHandler()
 {
 }
 
+/**
+ * @brief StockCsvHandler::ImportCSV
+ * @return
+ */
 std::vector<TransactionType> StockCsvHandler::ImportCSV()
 {
     std::vector<TransactionType> transactions;
@@ -52,7 +62,7 @@ std::vector<TransactionType> StockCsvHandler::ImportCSV()
             line.erase(0, startIndex + 1);
 
             //Parse out date values
-            //Assumes Month / Day / Year
+            //Assumes Month / Day / Year in mm/dd/yy format
             int month, day, year;
             startIndex = date.find("/");
             month = std::stoi(date.substr(0,startIndex));
@@ -67,12 +77,12 @@ std::vector<TransactionType> StockCsvHandler::ImportCSV()
             time_t rawtime;
             time ( &rawtime );
             tm = *localtime ( &rawtime );
-            tm.tm_year = year - 1900;
+            tm.tm_year = year + 2000;
             tm.tm_mon = month - 1;
             tm.tm_mday = day;
 
             //Create Transaction Types...
-            Stock newStock(symbol, price, quantity, mktime(&tm));
+            Stock newStock(symbol, price, quantity, mktime(&tm), type);
             transactions.push_back(newStock);
         }
     } 
@@ -83,13 +93,28 @@ std::vector<TransactionType> StockCsvHandler::ImportCSV()
     return transactions;
 }
 
-
+/**
+ * @brief StockCsvHandler::ExportCSV
+ * @param transactions
+ * @return
+ */
 bool StockCsvHandler::ExportCSV(std::vector<TransactionType> transactions)
 {
     if(outputFilePath.empty())
     {
         std::cerr << "Please specify an ouput file path\n";
         return false;
+    }
+
+    std::ofstream outputFile(outputFilePath);
+    if (outputFile.is_open())
+    {
+        outputFile << "Symbol, Price, Quantity, Transaction, Date\n";
+        for(std::vector<TransactionType>::iterator it = transactions.begin(); it != transactions.end(); ++it)
+        {
+            Stock temp = *it;
+            outputFile << temp.ToCSV();
+        }
     }
 
     return true;

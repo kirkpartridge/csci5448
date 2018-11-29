@@ -1,12 +1,9 @@
-#include "loginwindow.h"
-
 /****************************************************************************
 **
 ****************************************************************************/
 
 #include <QtWidgets>
 #include "loginwindow.h"
-#include "logincontroller.h"
 
 /**Constructs the login window. Populates with
  * necessary labels and inputs*/

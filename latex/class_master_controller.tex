@@ -1,5 +1,9 @@
 \hypertarget{class_master_controller}{}\section{Master\+Controller Class Reference}
 \label{class_master_controller}\index{Master\+Controller@{Master\+Controller}}
+
+
+{\ttfamily \#include $<$mastercontroller.\+h$>$}
+
 Inheritance diagram for Master\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,12 +14,15 @@ Inheritance diagram for Master\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_master_controller_a4503221125383b917c86863c3e40697b}{Master\+Controller}} (Q\+Widget $\ast$parent=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_master_controller_a1224d024402d36a61e9bd7b89f434388}{$\sim$\+Master\+Controller}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_master_controller_adb9bf0a49dd9010217c47834a98ec184}{login\+Complete}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if the login is complete. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Master controller. Controls the sub controllers 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_master_controller_a4503221125383b917c86863c3e40697b}\label{class_master_controller_a4503221125383b917c86863c3e40697b}} 
@@ -24,11 +31,19 @@ void \mbox{\hyperlink{class_master_controller_adb9bf0a49dd9010217c47834a98ec184}
 \subsubsection{\texorpdfstring{Master\+Controller()}{MasterController()}}
 {\footnotesize\ttfamily Master\+Controller\+::\+Master\+Controller (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+
+
+Constructor. 
+
 Constructor for the \mbox{\hyperlink{class_master_controller}{Master\+Controller}} Object Creates two sub controllers to handle control flow \mbox{\hyperlink{class_login_controller}{Login\+Controller}} and \mbox{\hyperlink{class_stock_controller}{Stock\+Controller}} \mbox{\Hypertarget{class_master_controller_a1224d024402d36a61e9bd7b89f434388}\label{class_master_controller_a1224d024402d36a61e9bd7b89f434388}} 
 \index{Master\+Controller@{Master\+Controller}!````~Master\+Controller@{$\sim$\+Master\+Controller}}
 \index{````~Master\+Controller@{$\sim$\+Master\+Controller}!Master\+Controller@{Master\+Controller}}
 \subsubsection{\texorpdfstring{$\sim$\+Master\+Controller()}{~MasterController()}}
 {\footnotesize\ttfamily Master\+Controller\+::$\sim$\+Master\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
 
 Deconstructor for the \mbox{\hyperlink{class_master_controller}{Master\+Controller}} Object Deletes the two internal sub controllers 
 
@@ -38,6 +53,10 @@ Deconstructor for the \mbox{\hyperlink{class_master_controller}{Master\+Controll
 \index{login\+Complete@{login\+Complete}!Master\+Controller@{Master\+Controller}}
 \subsubsection{\texorpdfstring{login\+Complete()}{loginComplete()}}
 {\footnotesize\ttfamily void Master\+Controller\+::login\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the login is complete. 
 
 Called when the login controller has completed its tasks Happens once the user has logged in 
 

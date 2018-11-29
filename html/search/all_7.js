@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['qt_5fmeta_5fstringdata_5fcontroller_5ft',['qt_meta_stringdata_Controller_t',['../structqt__meta__stringdata___controller__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5flogin_5ft',['qt_meta_stringdata_Login_t',['../structqt__meta__stringdata___login__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5flogincontroller_5ft',['qt_meta_stringdata_LoginController_t',['../structqt__meta__stringdata___login_controller__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5floginwindow_5ft',['qt_meta_stringdata_LoginWindow_t',['../structqt__meta__stringdata___login_window__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5fmainwindow_5ft',['qt_meta_stringdata_MainWindow_t',['../structqt__meta__stringdata___main_window__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5fsignupwindow_5ft',['qt_meta_stringdata_SignUpWindow_t',['../structqt__meta__stringdata___sign_up_window__t.html',1,'']]],
-  ['qt_5fmeta_5fstringdata_5fstockcontroller_5ft',['qt_meta_stringdata_StockController_t',['../structqt__meta__stringdata___stock_controller__t.html',1,'']]],
-  ['quantity',['quantity',['../class_transaction_type.html#a60b6221cf4b0bf30f5c4a4e15893b98d',1,'TransactionType']]]
+  ['logincomplete',['loginComplete',['../class_master_controller.html#adb9bf0a49dd9010217c47834a98ec184',1,'MasterController']]],
+  ['logincontroller',['LoginController',['../class_login_controller.html',1,'LoginController'],['../class_login_controller.html#a0deeca3547d53b2b4c668d89198f4d79',1,'LoginController::LoginController()']]],
+  ['loginwindow',['LoginWindow',['../class_login_window.html',1,'LoginWindow'],['../class_login_window.html#aacfb01de174b9eaf5a712bbfd4b6d9b5',1,'LoginWindow::LoginWindow()']]]
 ];

@@ -13,22 +13,27 @@ class QStringListModel;
 class QTextEdit;
 QT_END_NAMESPACE
 
-//! [Window definition]
+/** Login Window class
+ * Creates login window
+ * */
 class LoginWindow : public QWidget
 {
     Q_OBJECT
 
 public:
+    ///Login Window constructor
     LoginWindow(QWidget *parent = 0);
+    ///Returns the Login Button
     QPushButton * getLoginButton() { return loginButton; }
+    ///Returns the sign up button
     QPushButton * getSignUpButton() { return signUpButton; }
-
+    ///Returns user entered login
     std::string getLogin();
+    ///Returns user entered password
     std::string getPassword();
 
 private:
-    void setupModel();
-
+    ///Private Qwidgets
     QLabel *loginNameLabel;
     QLabel *passwordLabel;
     QLabel *loginButtonLabel;

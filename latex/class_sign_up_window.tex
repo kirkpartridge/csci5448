@@ -2,11 +2,6 @@
 \label{class_sign_up_window}\index{Sign\+Up\+Window@{Sign\+Up\+Window}}
 
 
-\mbox{[}Window definition\mbox{]}  
-
-
-
-
 {\ttfamily \#include $<$signupwindow.\+h$>$}
 
 Inheritance diagram for Sign\+Up\+Window\+:\begin{figure}[H]
@@ -19,23 +14,23 @@ Inheritance diagram for Sign\+Up\+Window\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_sign_up_window_aaf6b145da15912da668cd6a4dc380bd5}{Sign\+Up\+Window}} (Q\+Widget $\ast$parent=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sign_up_window_ad6c8355890f7d68e1594b208c9ff664d}\label{class_sign_up_window_ad6c8355890f7d68e1594b208c9ff664d}} 
-Q\+Push\+Button $\ast$ {\bfseries get\+Sign\+Up\+Button} ()
-\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_sign_up_window_ad6c8355890f7d68e1594b208c9ff664d}{get\+Sign\+Up\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns sign up button. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sign_up_window_a3d2a68bf74ee8ac639117af65dac317a}\label{class_sign_up_window_a3d2a68bf74ee8ac639117af65dac317a}} 
-Q\+Push\+Button $\ast$ {\bfseries get\+Cancel\+Button} ()
-\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_sign_up_window_a3d2a68bf74ee8ac639117af65dac317a}{get\+Cancel\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns cancel button. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_sign_up_window_a57f7f4f906052c87ea9b0922e74ca657}{get\+Login\+Name}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns user entered login name. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_sign_up_window_aa12ab939d6f9ff106c0190c2b330259c}{get\+Password}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns user entered password. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_sign_up_window_aaf6fae547c07d475b902e9aa6a2c7749}{get\+Repeat\+Password}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns user entered repeat password. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\mbox{[}Window definition\mbox{]} 
+Sign up window. Populates needed edits. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_sign_up_window_aaf6b145da15912da668cd6a4dc380bd5}\label{class_sign_up_window_aaf6b145da15912da668cd6a4dc380bd5}} 
@@ -43,6 +38,10 @@ std\+::string \mbox{\hyperlink{class_sign_up_window_aaf6fae547c07d475b902e9aa6a2
 \index{Sign\+Up\+Window@{Sign\+Up\+Window}!Sign\+Up\+Window@{Sign\+Up\+Window}}
 \subsubsection{\texorpdfstring{Sign\+Up\+Window()}{SignUpWindow()}}
 {\footnotesize\ttfamily Sign\+Up\+Window\+::\+Sign\+Up\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
 
 Creates sign up window. Includes necessary input fields. 
 
@@ -53,17 +52,29 @@ Creates sign up window. Includes necessary input fields.
 \subsubsection{\texorpdfstring{get\+Login\+Name()}{getLoginName()}}
 {\footnotesize\ttfamily std\+::string Sign\+Up\+Window\+::get\+Login\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Returns user entered login name. 
+
 Return user provided login name. \mbox{\Hypertarget{class_sign_up_window_aa12ab939d6f9ff106c0190c2b330259c}\label{class_sign_up_window_aa12ab939d6f9ff106c0190c2b330259c}} 
 \index{Sign\+Up\+Window@{Sign\+Up\+Window}!get\+Password@{get\+Password}}
 \index{get\+Password@{get\+Password}!Sign\+Up\+Window@{Sign\+Up\+Window}}
 \subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
 {\footnotesize\ttfamily std\+::string Sign\+Up\+Window\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Returns user entered password. 
+
 Return user provided password. \mbox{\Hypertarget{class_sign_up_window_aaf6fae547c07d475b902e9aa6a2c7749}\label{class_sign_up_window_aaf6fae547c07d475b902e9aa6a2c7749}} 
 \index{Sign\+Up\+Window@{Sign\+Up\+Window}!get\+Repeat\+Password@{get\+Repeat\+Password}}
 \index{get\+Repeat\+Password@{get\+Repeat\+Password}!Sign\+Up\+Window@{Sign\+Up\+Window}}
 \subsubsection{\texorpdfstring{get\+Repeat\+Password()}{getRepeatPassword()}}
 {\footnotesize\ttfamily std\+::string Sign\+Up\+Window\+::get\+Repeat\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns user entered repeat password. 
 
 Return user provided repeated password. 
 

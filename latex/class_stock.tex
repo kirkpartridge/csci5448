@@ -1,5 +1,14 @@
 \hypertarget{class_stock}{}\section{Stock Class Reference}
 \label{class_stock}\index{Stock@{Stock}}
+
+
+The \mbox{\hyperlink{class_stock}{Stock}} class -\/ Externs transaction type.  
+
+
+
+
+{\ttfamily \#include $<$Stock.\+h$>$}
+
 Inheritance diagram for Stock\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,16 +18,85 @@ Inheritance diagram for Stock\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_stock_adddc4282213b3174a4299cca5a30117c}\label{class_stock_adddc4282213b3174a4299cca5a30117c}} 
 \mbox{\hyperlink{class_stock_adddc4282213b3174a4299cca5a30117c}{Stock}} ()
 \begin{DoxyCompactList}\small\item\em Default Contrsuctor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_stock_a0527749d03379ba35706fcf48e7effa5}\label{class_stock_a0527749d03379ba35706fcf48e7effa5}} 
-\mbox{\hyperlink{class_stock_a0527749d03379ba35706fcf48e7effa5}{Stock}} (std\+::string \mbox{\hyperlink{class_transaction_type_aad758d557417a18c944dc9849a390391}{ticker}}, int \mbox{\hyperlink{class_transaction_type_a079b40eebde548904529841f8746d4ff}{price}}, int \mbox{\hyperlink{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}{quantity}}, time\+\_\+t date)
-\begin{DoxyCompactList}\small\item\em Parameter Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_stock_a855ce07aef7d8b4a7d6bffb301a10e53}\label{class_stock_a855ce07aef7d8b4a7d6bffb301a10e53}} 
+{\bfseries Stock} (\mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} \&x)
+\item 
+\mbox{\Hypertarget{class_stock_a29cb9e4fc7c907ef975d7ea90ef55e24}\label{class_stock_a29cb9e4fc7c907ef975d7ea90ef55e24}} 
+\mbox{\hyperlink{class_stock_a29cb9e4fc7c907ef975d7ea90ef55e24}{$\sim$\+Stock}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stock_a29cb9e4fc7c907ef975d7ea90ef55e24}{Stock\+::$\sim$\+Stock}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stock_a91ae0fdc8b4b70446d328dbec96f043d}{Stock}} (std\+::string \mbox{\hyperlink{class_transaction_type_aad758d557417a18c944dc9849a390391}{ticker}}, int \mbox{\hyperlink{class_transaction_type_a079b40eebde548904529841f8746d4ff}{price}}, int \mbox{\hyperlink{class_transaction_type_a60b6221cf4b0bf30f5c4a4e15893b98d}{quantity}}, time\+\_\+t date, std\+::string \mbox{\hyperlink{class_transaction_type_a8052c2576840eba8072c008022f38d51}{type}})
+\begin{DoxyCompactList}\small\item\em Parameter Constructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stock_a32283ba4a8ff5a187a51ff8a1b83b8cc}{format\+For\+C\+SV}} () override
+\begin{DoxyCompactList}\small\item\em Format \mbox{\hyperlink{class_stock}{Stock}} for C\+SV writing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_stock}{Stock}} class -\/ Externs transaction type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stock_adddc4282213b3174a4299cca5a30117c}\label{class_stock_adddc4282213b3174a4299cca5a30117c}} 
+\index{Stock@{Stock}!Stock@{Stock}}
+\index{Stock@{Stock}!Stock@{Stock}}
+\subsubsection{\texorpdfstring{Stock()}{Stock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Stock\+::\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Contrsuctor. 
+
+\mbox{\hyperlink{class_stock_adddc4282213b3174a4299cca5a30117c}{Stock\+::\+Stock}}. \mbox{\Hypertarget{class_stock_a91ae0fdc8b4b70446d328dbec96f043d}\label{class_stock_a91ae0fdc8b4b70446d328dbec96f043d}} 
+\index{Stock@{Stock}!Stock@{Stock}}
+\index{Stock@{Stock}!Stock@{Stock}}
+\subsubsection{\texorpdfstring{Stock()}{Stock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Stock\+::\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{int}]{price,  }\item[{int}]{quantity,  }\item[{time\+\_\+t}]{date,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Parameter Constructor. 
+
+\mbox{\hyperlink{class_stock_adddc4282213b3174a4299cca5a30117c}{Stock\+::\+Stock}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & \\
+\hline
+{\em price} & \\
+\hline
+{\em quantity} & \\
+\hline
+{\em date} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_a32283ba4a8ff5a187a51ff8a1b83b8cc}\label{class_stock_a32283ba4a8ff5a187a51ff8a1b83b8cc}} 
+\index{Stock@{Stock}!format\+For\+C\+SV@{format\+For\+C\+SV}}
+\index{format\+For\+C\+SV@{format\+For\+C\+SV}!Stock@{Stock}}
+\subsubsection{\texorpdfstring{format\+For\+C\+S\+V()}{formatForCSV()}}
+{\footnotesize\ttfamily std\+::string Stock\+::format\+For\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Format \mbox{\hyperlink{class_stock}{Stock}} for C\+SV writing. 
+
+\mbox{\hyperlink{class_stock_a32283ba4a8ff5a187a51ff8a1b83b8cc}{Stock\+::format\+For\+C\+SV}}.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_transaction_type_a49908846fcb07d3f9bef51758c79b370}{Transaction\+Type}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Backend/include/Stock.\+h\item 
-Backend/src/Stock.\+cpp\end{DoxyCompactItemize}
+G\+U\+I/stock\+Tracker/Stock.\+h\item 
+G\+U\+I/stock\+Tracker/Stock.\+cpp\end{DoxyCompactItemize}

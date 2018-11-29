@@ -9,10 +9,12 @@
 /**Constructor for the LoginController class.
  * Takes a pointer back to the master controller to allow communication back
  * Calls the parent constructor (QWidget)*/
-LoginController::LoginController(MasterController * _masterPtr, QWidget *parent)
+LoginController::LoginController(MasterController * _masterPtr, StockModel * _stockModelPtr,
+                                 QWidget *parent)
     : QWidget(parent)
 {
     masterPtr = _masterPtr;
+    stockModelPtr = _stockModelPtr;
     loginWindow = new LoginWindow();
     signUpWindow = new SignUpWindow();
     loginWindow->show();
@@ -22,26 +24,34 @@ LoginController::LoginController(MasterController * _masterPtr, QWidget *parent)
             this, SLOT(handleSignUpButton()));
     connect(signUpWindow->getCancelButton(), SIGNAL(released()),
             this, SLOT(handleCancelSignUp()));
+    connect(signUpWindow->getSignUpButton(), SIGNAL(released()),
+            this, SLOT(handleNewSignUpButton()));
 }
 
-/**Deconstructor for the LoginController
- * Deletes both sub windows*/
+
+/**
+ * @brief LoginController::~LoginController
+ */
 LoginController::~LoginController()
 {
-    delete loginWindow;
-    delete signUpWindow;
+   // delete loginWindow;
+   // delete signUpWindow;
 }
 
-/**closeWindows function closes any open windows.
- * Called when login process is complete.*/
+/**
+ * @brief LoginController::closeWindows
+ */
 void LoginController::closeWindows()
 {
     loginWindow->close();
     signUpWindow->close();
 }
 
-/**Check login credentials within the model
- * If succussfull, return control to master controller*/
+/**
+ * @brief LoginController::handleLoginButton
+ * Check login credentials within the model
+ * If succussfull, return control to master controller
+ */
 void LoginController::handleLoginButton()
 {
     //Login done, pass control back to master
@@ -52,11 +62,12 @@ void LoginController::handleLoginButton()
 void LoginController::handleSignUpButton()
 {
     loginWindow->hide();
-    connect(signUpWindow->getSignUpButton(), SIGNAL(released()),
-            this, SLOT(handleNewSignUpButton()));
     signUpWindow->show();
 }
 
+/**
+ * @brief LoginController::handleCancelSignUp
+ */
 void LoginController::handleCancelSignUp()
 {
     loginWindow->show();
@@ -70,6 +81,10 @@ void LoginController::handleNewSignUpButton()
     switch(check)
     {
     case 0:
+        QMessageBox::warning(
+            this,
+            tr("Stock Tracker"),
+            tr("User added. Please Login."));
         loginWindow->show();
         signUpWindow->close();
         break;
@@ -93,8 +108,13 @@ void LoginController::handleNewSignUpButton()
     }
 }
 
+/**
+ * @brief LoginController::validateNewUser
+ * @return status
+ */
 int LoginController::validateNewUser()
 {
+    //Check values to ensure they were entered
     std::string password1 = signUpWindow->getPassword();
     std::string password2 = signUpWindow->getRepeatPassword();
     std::string loginName = signUpWindow->getLoginName();

@@ -1,7 +1,12 @@
+#ifndef STOCKCSVHANDLER_H
+#define STOCKCSVHANDLER_H
 #include <vector>
 
 #include "./Stock.h"
 
+/**
+ * @brief The StockCsvHandler class
+ */
 class StockCsvHandler {
 
  public:
@@ -30,3 +35,5 @@ private:
     ///Private member for output file path.
     std::string outputFilePath;
 };
+
+#endif

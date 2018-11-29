@@ -2,11 +2,6 @@
 \label{class_login_window}\index{Login\+Window@{Login\+Window}}
 
 
-\mbox{[}Window definition\mbox{]}  
-
-
-
-
 {\ttfamily \#include $<$loginwindow.\+h$>$}
 
 Inheritance diagram for Login\+Window\+:\begin{figure}[H]
@@ -19,21 +14,21 @@ Inheritance diagram for Login\+Window\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_login_window_aacfb01de174b9eaf5a712bbfd4b6d9b5}{Login\+Window}} (Q\+Widget $\ast$parent=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Login Window constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_login_window_aca8271de7c4e99516ee30940767847f6}\label{class_login_window_aca8271de7c4e99516ee30940767847f6}} 
-Q\+Push\+Button $\ast$ {\bfseries get\+Login\+Button} ()
-\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_login_window_aca8271de7c4e99516ee30940767847f6}{get\+Login\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Login Button. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_login_window_a837947cbea225ff915780d79bd2797df}\label{class_login_window_a837947cbea225ff915780d79bd2797df}} 
-Q\+Push\+Button $\ast$ {\bfseries get\+Sign\+Up\+Button} ()
-\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_login_window_a837947cbea225ff915780d79bd2797df}{get\+Sign\+Up\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Returns the sign up button. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_login_window_abb7c1af4eff6d4bcfcae122ee77089f1}{get\+Login}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns user entered login. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_login_window_a708710b83651cfa427d8f213b6a1890e}{get\+Password}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns user entered password. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\mbox{[}Window definition\mbox{]} 
+Login Window class Creates login window 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_login_window_aacfb01de174b9eaf5a712bbfd4b6d9b5}\label{class_login_window_aacfb01de174b9eaf5a712bbfd4b6d9b5}} 
@@ -41,6 +36,10 @@ std\+::string \mbox{\hyperlink{class_login_window_a708710b83651cfa427d8f213b6a18
 \index{Login\+Window@{Login\+Window}!Login\+Window@{Login\+Window}}
 \subsubsection{\texorpdfstring{Login\+Window()}{LoginWindow()}}
 {\footnotesize\ttfamily Login\+Window\+::\+Login\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Login Window constructor. 
 
 Constructs the login window. Populates with necessary labels and inputs 
 
@@ -51,11 +50,19 @@ Constructs the login window. Populates with necessary labels and inputs
 \subsubsection{\texorpdfstring{get\+Login()}{getLogin()}}
 {\footnotesize\ttfamily std\+::string Login\+Window\+::get\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Returns user entered login. 
+
 Returns login name provided by user. \mbox{\Hypertarget{class_login_window_a708710b83651cfa427d8f213b6a1890e}\label{class_login_window_a708710b83651cfa427d8f213b6a1890e}} 
 \index{Login\+Window@{Login\+Window}!get\+Password@{get\+Password}}
 \index{get\+Password@{get\+Password}!Login\+Window@{Login\+Window}}
 \subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
 {\footnotesize\ttfamily std\+::string Login\+Window\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns user entered password. 
 
 Returns password provided by user. 
 

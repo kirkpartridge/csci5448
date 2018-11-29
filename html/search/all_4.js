@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['logincomplete',['loginComplete',['../class_master_controller.html#adb9bf0a49dd9010217c47834a98ec184',1,'MasterController']]],
-  ['logincontroller',['LoginController',['../class_login_controller.html',1,'LoginController'],['../class_login_controller.html#a3591281520e6cfea2bc3af44bdef58e3',1,'LoginController::LoginController()']]],
-  ['loginwindow',['LoginWindow',['../class_login_window.html',1,'LoginWindow'],['../class_login_window.html#aacfb01de174b9eaf5a712bbfd4b6d9b5',1,'LoginWindow::LoginWindow()']]]
+  ['getaddtransactionbutton',['getAddTransactionButton',['../class_homepage.html#a952d5e2adcae33b4b1e470b270c17a6f',1,'Homepage']]],
+  ['getcancelbutton',['getCancelButton',['../class_add_transaction_page.html#a902254b4280142c7d4ab1fe2ea54e92d',1,'AddTransactionPage::getCancelButton()'],['../class_sign_up_window.html#a3d2a68bf74ee8ac639117af65dac317a',1,'SignUpWindow::getCancelButton()']]],
+  ['getdate',['GetDate',['../class_transaction_type.html#a5e4e3170dda80d69f67efd3044bb30e0',1,'TransactionType::GetDate()'],['../class_add_transaction_page.html#a7c6a8d3a13aebb698413b08e28baf1ab',1,'AddTransactionPage::getDate()']]],
+  ['getexportcsvbutton',['getExportCSVButton',['../class_homepage.html#ab79175afe05f63d67e73a9cdd9942665',1,'Homepage']]],
+  ['getimportcsvbutton',['getImportCSVButton',['../class_homepage.html#a773f7450bd9c20ebe4e18020fe1cdcd5',1,'Homepage']]],
+  ['getinputfilepath',['getInputFilePath',['../class_stock_csv_handler.html#a80849f00a57089ea30dde9947af3d4e3',1,'StockCsvHandler']]],
+  ['getlogin',['getLogin',['../class_login_window.html#abb7c1af4eff6d4bcfcae122ee77089f1',1,'LoginWindow']]],
+  ['getloginbutton',['getLoginButton',['../class_login_window.html#aca8271de7c4e99516ee30940767847f6',1,'LoginWindow']]],
+  ['getloginname',['getLoginName',['../class_sign_up_window.html#a57f7f4f906052c87ea9b0922e74ca657',1,'SignUpWindow']]],
+  ['getoutputfilepath',['getOutputFilePath',['../class_stock_csv_handler.html#aba4991b48238f173ecbe9b29ab850a0a',1,'StockCsvHandler']]],
+  ['getpassword',['getPassword',['../class_login_window.html#a708710b83651cfa427d8f213b6a1890e',1,'LoginWindow::getPassword()'],['../class_sign_up_window.html#aa12ab939d6f9ff106c0190c2b330259c',1,'SignUpWindow::getPassword()']]],
+  ['getprice',['GetPrice',['../class_transaction_type.html#ac139f76c5ae460bd9c1c87570c6bee34',1,'TransactionType::GetPrice()'],['../class_add_transaction_page.html#a2fa90d880190417bbf223ef8c73d797b',1,'AddTransactionPage::getPrice()']]],
+  ['getquantity',['GetQuantity',['../class_transaction_type.html#a2b81258ca5237f8c07e2bdd43f0ffde1',1,'TransactionType::GetQuantity()'],['../class_add_transaction_page.html#a82f790ea61da26f20e03d835d432a841',1,'AddTransactionPage::getQuantity()']]],
+  ['getrepeatpassword',['getRepeatPassword',['../class_sign_up_window.html#aaf6fae547c07d475b902e9aa6a2c7749',1,'SignUpWindow']]],
+  ['getsearchbutton',['getSearchButton',['../class_homepage.html#a59cc8028d2df743675cd66cdd7104fd3',1,'Homepage']]],
+  ['getsearchedit',['getSearchEdit',['../class_homepage.html#a4cbb4d27b50063abbfe6fc321744f2fe',1,'Homepage']]],
+  ['getsignupbutton',['getSignUpButton',['../class_login_window.html#a837947cbea225ff915780d79bd2797df',1,'LoginWindow::getSignUpButton()'],['../class_sign_up_window.html#ad6c8355890f7d68e1594b208c9ff664d',1,'SignUpWindow::getSignUpButton()']]],
+  ['getsubmitbutton',['getSubmitButton',['../class_add_transaction_page.html#a6133a9ed435119693730f49e409ab748',1,'AddTransactionPage']]],
+  ['getsymbol',['getSymbol',['../class_add_transaction_page.html#a6bbaa7bd372987922aa710c543f78668',1,'AddTransactionPage']]],
+  ['gettablebuttons',['getTableButtons',['../class_homepage.html#a89e57c716c6ab8c676ec89cd637e4d7b',1,'Homepage::getTableButtons()'],['../class_search_page.html#af059cb331d8eb874068ebac5fb3e97b9',1,'SearchPage::getTableButtons()']]],
+  ['getticker',['GetTicker',['../class_transaction_type.html#a88fd57a09996e67178256cd8e76cb3e4',1,'TransactionType']]],
+  ['gettransaction',['getTransaction',['../class_add_transaction_page.html#a109f081b4117d9c7451ed7079598dddb',1,'AddTransactionPage']]],
+  ['gettransactions',['GetTransactions',['../class_stock_model.html#ac11ae61c7217b569205d135d33c34008',1,'StockModel']]],
+  ['gettransactionsfromcsv',['GetTransactionsFromCSV',['../class_stock_model.html#a88b3101a6ffcfa31ef3a6058c8d6c990',1,'StockModel']]],
+  ['gettype',['GetType',['../class_transaction_type.html#a2253c4366ecd89e2f4d31888527e47dc',1,'TransactionType']]]
 ];

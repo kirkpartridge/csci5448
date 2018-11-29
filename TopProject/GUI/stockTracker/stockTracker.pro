@@ -30,19 +30,38 @@ SOURCES += \
     loginwindow.cpp \
     mastercontroller.cpp \
     stockcontroller.cpp \
-    logincontroller.cpp
+    logincontroller.cpp \
+    homepage.cpp \
+    Stock.cpp \
+    StockCsvHandler.cpp \
+    StockModel.cpp \
+    TransactionType.cpp \
+    addtransactionpage.cpp \
+    stockpage.cpp \
+    searchpage.cpp
 
 HEADERS += \
     signupwindow.h \
     loginwindow.h \
     mastercontroller.h \
     stockcontroller.h \
-    logincontroller.h
+    logincontroller.h \
+    homepage.h \
+    Stock.h \
+    StockCsvHandler.h \
+    StockModel.h \
+    TransactionType.h \
+    addtransactionpage.h \
+    stockpage.h \
+    searchpage.h
 
-FORMS += \
-        mainwindow.ui
+#FORMS += \
+#        mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    test.qmodel

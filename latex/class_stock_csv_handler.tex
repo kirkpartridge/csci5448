@@ -1,18 +1,23 @@
 \hypertarget{class_stock_csv_handler}{}\section{Stock\+Csv\+Handler Class Reference}
 \label{class_stock_csv_handler}\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+
+
+The \mbox{\hyperlink{class_stock_csv_handler}{Stock\+Csv\+Handler}} class.  
+
+
+
+
+{\ttfamily \#include $<$Stock\+Csv\+Handler.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}\label{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}} 
 \mbox{\hyperlink{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}{Stock\+Csv\+Handler}} ()
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}\label{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}} 
 \mbox{\hyperlink{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}{$\sim$\+Stock\+Csv\+Handler}} ()
 \begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}\label{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}} 
 std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ \mbox{\hyperlink{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}{Import\+C\+SV}} ()
 \begin{DoxyCompactList}\small\item\em Import C\+SV from input file path. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}\label{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}} 
 bool \mbox{\hyperlink{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}{Export\+C\+SV}} (std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ transactions)
 \begin{DoxyCompactList}\small\item\em Export C\+SV to output file path. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_stock_csv_handler_af0fa483a54671ac9cf6d14fb7991f3d3}\label{class_stock_csv_handler_af0fa483a54671ac9cf6d14fb7991f3d3}} 
@@ -29,7 +34,71 @@ std\+::string \mbox{\hyperlink{class_stock_csv_handler_aba4991b48238f173ecbe9b29
 \begin{DoxyCompactList}\small\item\em Getter for output file path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_stock_csv_handler}{Stock\+Csv\+Handler}} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}\label{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}} 
+\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}!Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}!Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+\subsubsection{\texorpdfstring{Stock\+Csv\+Handler()}{StockCsvHandler()}}
+{\footnotesize\ttfamily Stock\+Csv\+Handler\+::\+Stock\+Csv\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_stock_csv_handler_a79a39d762f4dd87f82ee927c33f596cc}{Stock\+Csv\+Handler\+::\+Stock\+Csv\+Handler}}. \mbox{\Hypertarget{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}\label{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}} 
+\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}!````~Stock\+Csv\+Handler@{$\sim$\+Stock\+Csv\+Handler}}
+\index{````~Stock\+Csv\+Handler@{$\sim$\+Stock\+Csv\+Handler}!Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+\subsubsection{\texorpdfstring{$\sim$\+Stock\+Csv\+Handler()}{~StockCsvHandler()}}
+{\footnotesize\ttfamily Stock\+Csv\+Handler\+::$\sim$\+Stock\+Csv\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+\mbox{\hyperlink{class_stock_csv_handler_a9c197759533cc003c511d784a1cdb521}{Stock\+Csv\+Handler\+::$\sim$\+Stock\+Csv\+Handler}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}\label{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}} 
+\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}!Export\+C\+SV@{Export\+C\+SV}}
+\index{Export\+C\+SV@{Export\+C\+SV}!Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+\subsubsection{\texorpdfstring{Export\+C\+S\+V()}{ExportCSV()}}
+{\footnotesize\ttfamily bool Stock\+Csv\+Handler\+::\+Export\+C\+SV (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$}]{transactions }\end{DoxyParamCaption})}
+
+
+
+Export C\+SV to output file path. 
+
+\mbox{\hyperlink{class_stock_csv_handler_a5302fb4580cc69a73aa22a6e97e314ad}{Stock\+Csv\+Handler\+::\+Export\+C\+SV}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transactions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}\label{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}} 
+\index{Stock\+Csv\+Handler@{Stock\+Csv\+Handler}!Import\+C\+SV@{Import\+C\+SV}}
+\index{Import\+C\+SV@{Import\+C\+SV}!Stock\+Csv\+Handler@{Stock\+Csv\+Handler}}
+\subsubsection{\texorpdfstring{Import\+C\+S\+V()}{ImportCSV()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ Stock\+Csv\+Handler\+::\+Import\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Import C\+SV from input file path. 
+
+\mbox{\hyperlink{class_stock_csv_handler_a3b32398ef8bf2994162802496d721333}{Stock\+Csv\+Handler\+::\+Import\+C\+SV}}.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Backend/include/Stock\+Csv\+Handler.\+h\item 
-Backend/src/Stock\+Csv\+Handler.\+cpp\end{DoxyCompactItemize}
+G\+U\+I/stock\+Tracker/Stock\+Csv\+Handler.\+h\item 
+G\+U\+I/stock\+Tracker/Stock\+Csv\+Handler.\+cpp\end{DoxyCompactItemize}

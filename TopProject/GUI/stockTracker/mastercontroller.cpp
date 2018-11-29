@@ -6,8 +6,9 @@
 MasterController::MasterController(QWidget *parent)
     :QWidget(parent)
 {
-    loginController = new LoginController(this, parent);
-    stockController = new StockController(this, parent);
+    stockModel = new StockModel();
+    loginController = new LoginController(this, stockModel, parent);
+    stockController = new StockController(this, stockModel, parent);
 }
 
 /**Deconstructor for the MasterController Object

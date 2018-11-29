@@ -1,29 +1,134 @@
 \hypertarget{class_stock_model}{}\section{Stock\+Model Class Reference}
 \label{class_stock_model}\index{Stock\+Model@{Stock\+Model}}
+
+
+The \mbox{\hyperlink{class_stock_model}{Stock\+Model}} class.  
+
+
+
+
+{\ttfamily \#include $<$Stock\+Model.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_stock_model_aa5de5466e50f2bba375387dd35158b9d}\label{class_stock_model_aa5de5466e50f2bba375387dd35158b9d}} 
-bool {\bfseries Add\+Transaction} (std\+::string symbol, int quantity, int price, \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} type)
-\item 
-\mbox{\Hypertarget{class_stock_model_a2ace2720dc1742b8d563b96bb2e81eec}\label{class_stock_model_a2ace2720dc1742b8d563b96bb2e81eec}} 
-bool {\bfseries Remove\+Transaction} (std\+::string symbol, int quantity, int price, \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} type)
-\item 
-\mbox{\Hypertarget{class_stock_model_afcd1e771bc7417eb735ab383d24d4988}\label{class_stock_model_afcd1e771bc7417eb735ab383d24d4988}} 
-std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ {\bfseries Get\+Transactions} (std\+::string symbol)
-\item 
-\mbox{\Hypertarget{class_stock_model_ac892a9e35bc731342d92c84f5e0bfff6}\label{class_stock_model_ac892a9e35bc731342d92c84f5e0bfff6}} 
-\mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} {\bfseries Get\+Stock\+Data} (std\+::string symbol)
-\item 
-\mbox{\Hypertarget{class_stock_model_af9ac92e3e10b39f999ea5a41a96b7b9c}\label{class_stock_model_af9ac92e3e10b39f999ea5a41a96b7b9c}} 
-int {\bfseries Calculate\+Performance} ()
-\item 
-\mbox{\Hypertarget{class_stock_model_a8ce359297d4d2c8fcb0ad6889664b360}\label{class_stock_model_a8ce359297d4d2c8fcb0ad6889664b360}} 
-void {\bfseries Get\+Transactions\+From\+C\+SV} (std\+::string file\+Path)
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_stock_model_a79d89baa0edab731599f13fa63adf8c9}\label{class_stock_model_a79d89baa0edab731599f13fa63adf8c9}} 
+\mbox{\hyperlink{class_stock_model_a79d89baa0edab731599f13fa63adf8c9}{Stock\+Model}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stock_model_a79d89baa0edab731599f13fa63adf8c9}{Stock\+Model\+::\+Stock\+Model}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stock_model_a46abe8e7ba74e65192911a5e3fc65ba5}\label{class_stock_model_a46abe8e7ba74e65192911a5e3fc65ba5}} 
+\mbox{\hyperlink{class_stock_model_a46abe8e7ba74e65192911a5e3fc65ba5}{$\sim$\+Stock\+Model}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stock_model_a46abe8e7ba74e65192911a5e3fc65ba5}{Stock\+Model\+::$\sim$\+Stock\+Model}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stock_model_a6461b20ecb47314c9799a916f42e7e5d}{Add\+Transaction}} (std\+::string symbol, int quantity, int price, std\+::string date, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Adds a transaction to the internal model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stock_model_ad25fcc267361e7375b60f87c844ac36b}{Remove\+Transaction}} (std\+::string symbol, int quantity, int price, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Removes transaction form the internal model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stock_model_ac11ae61c7217b569205d135d33c34008}\label{class_stock_model_ac11ae61c7217b569205d135d33c34008}} 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ \mbox{\hyperlink{class_stock_model_ac11ae61c7217b569205d135d33c34008}{Get\+Transactions}} ()
+\begin{DoxyCompactList}\small\item\em Returns all transactions. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ \mbox{\hyperlink{class_stock_model_a88b3101a6ffcfa31ef3a6058c8d6c990}{Get\+Transactions\+From\+C\+SV}} (std\+::string file\+Path)
+\begin{DoxyCompactList}\small\item\em Reads in C\+SV and populates the internal model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stock_model_a4b0150fddd7fe2686b693f877ba84cac}{Set\+Export\+C\+S\+V\+Path}} (std\+::string file\+Path)
+\begin{DoxyCompactList}\small\item\em Setter for the export C\+SV path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_stock_model}{Stock\+Model}} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_model_a6461b20ecb47314c9799a916f42e7e5d}\label{class_stock_model_a6461b20ecb47314c9799a916f42e7e5d}} 
+\index{Stock\+Model@{Stock\+Model}!Add\+Transaction@{Add\+Transaction}}
+\index{Add\+Transaction@{Add\+Transaction}!Stock\+Model@{Stock\+Model}}
+\subsubsection{\texorpdfstring{Add\+Transaction()}{AddTransaction()}}
+{\footnotesize\ttfamily bool Stock\+Model\+::\+Add\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{symbol,  }\item[{int}]{quantity,  }\item[{int}]{price,  }\item[{std\+::string}]{date,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Adds a transaction to the internal model. 
+
+\mbox{\hyperlink{class_stock_model_a6461b20ecb47314c9799a916f42e7e5d}{Stock\+Model\+::\+Add\+Transaction}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & \\
+\hline
+{\em quantity} & \\
+\hline
+{\em price} & \\
+\hline
+{\em date} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_model_a88b3101a6ffcfa31ef3a6058c8d6c990}\label{class_stock_model_a88b3101a6ffcfa31ef3a6058c8d6c990}} 
+\index{Stock\+Model@{Stock\+Model}!Get\+Transactions\+From\+C\+SV@{Get\+Transactions\+From\+C\+SV}}
+\index{Get\+Transactions\+From\+C\+SV@{Get\+Transactions\+From\+C\+SV}!Stock\+Model@{Stock\+Model}}
+\subsubsection{\texorpdfstring{Get\+Transactions\+From\+C\+S\+V()}{GetTransactionsFromCSV()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_transaction_type}{Transaction\+Type}} $>$ Stock\+Model\+::\+Get\+Transactions\+From\+C\+SV (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Reads in C\+SV and populates the internal model. 
+
+\mbox{\hyperlink{class_stock_model_a88b3101a6ffcfa31ef3a6058c8d6c990}{Stock\+Model\+::\+Get\+Transactions\+From\+C\+SV}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_model_ad25fcc267361e7375b60f87c844ac36b}\label{class_stock_model_ad25fcc267361e7375b60f87c844ac36b}} 
+\index{Stock\+Model@{Stock\+Model}!Remove\+Transaction@{Remove\+Transaction}}
+\index{Remove\+Transaction@{Remove\+Transaction}!Stock\+Model@{Stock\+Model}}
+\subsubsection{\texorpdfstring{Remove\+Transaction()}{RemoveTransaction()}}
+{\footnotesize\ttfamily bool Stock\+Model\+::\+Remove\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{symbol,  }\item[{int}]{quantity,  }\item[{int}]{price,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Removes transaction form the internal model. 
+
+\mbox{\hyperlink{class_stock_model_ad25fcc267361e7375b60f87c844ac36b}{Stock\+Model\+::\+Remove\+Transaction}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & \\
+\hline
+{\em quantity} & \\
+\hline
+{\em price} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_model_a4b0150fddd7fe2686b693f877ba84cac}\label{class_stock_model_a4b0150fddd7fe2686b693f877ba84cac}} 
+\index{Stock\+Model@{Stock\+Model}!Set\+Export\+C\+S\+V\+Path@{Set\+Export\+C\+S\+V\+Path}}
+\index{Set\+Export\+C\+S\+V\+Path@{Set\+Export\+C\+S\+V\+Path}!Stock\+Model@{Stock\+Model}}
+\subsubsection{\texorpdfstring{Set\+Export\+C\+S\+V\+Path()}{SetExportCSVPath()}}
+{\footnotesize\ttfamily void Stock\+Model\+::\+Set\+Export\+C\+S\+V\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Setter for the export C\+SV path. 
+
+\mbox{\hyperlink{class_stock_model_a4b0150fddd7fe2686b693f877ba84cac}{Stock\+Model\+::\+Set\+Export\+C\+S\+V\+Path}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Backend/include/Stock\+Model.\+h\item 
-Backend/src/Stock\+Model.\+cpp\end{DoxyCompactItemize}
+G\+U\+I/stock\+Tracker/Stock\+Model.\+h\item 
+G\+U\+I/stock\+Tracker/Stock\+Model.\+cpp\end{DoxyCompactItemize}
